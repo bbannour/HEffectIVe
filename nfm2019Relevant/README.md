@@ -1,5 +1,5 @@
 # HEffectIVE 
-## Sample stand-alone project 
+## Sample stand-alone project: User-defined relevant (or significant) literals 
 
 Compiled with MinGW64 
 
