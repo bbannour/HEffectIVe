@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!DOCTYPE open-psa>
+<open-psa>
+  <define-fault-tree name="ft2">
+  <!--__interval_constraint__ event1 : [INT_MIN,-321] [321,INT_MAX] -->
+  <!--__interval_constraint__ event2 : [INT_MIN,0] -->
+  
+	  <define-gate name="ft2" >
+		<or>
+		  <event name="gate1" />
+		  <event name="gate2" />
+		</or>
+	  </define-gate>
+	  <define-gate name="gate1" >
+		<and>
+		  <event name="event1" />
+		  <event name="event2" />
+		</and>
+	  </define-gate>
+	  <define-gate name="gate2" >
+		<and>
+		  <event name="event3" />
+		  <event name="event4" />
+		</and>
+	  </define-gate>
+  </define-fault-tree>
+</open-psa>
